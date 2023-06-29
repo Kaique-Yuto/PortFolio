@@ -10,26 +10,30 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css">
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
     <script src="carousel.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scroll_to_section.js"></script>
 
 </script>
 
 </head>
 
 <body>
-    <nav class ="header"> 
-    <h1>Início</h1>  
-    <h1>Projetos</h1>
-    <h1>Resumo</h1>  
+    <nav class ="header">
+        <ul class="header_buttons_container">
+            <li><a href="#home">Início</a></li>
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#resume">Currículo</a></li>
+        </ul> 
     </nav>
 
-    <main class="home">
-        <section class="home_content">
+    <main>
+        <section class="home_content" id="home">
             <h1 class="home_title">Kaique Yuto Rodrigues </h1>
-            <hr>
-            <p class="additional_info">Estudante de Ciência de Dados e Engenheiro Mecânico.</p>
+            <hr class="line_bellow_home_title">
+            <p class="my_brief_summary">Estudante de Ciência de Dados e Engenheiro Mecânico.</p>
             <div class="main_info_and_my_picture_container">
                 <img class= "my_picture" src="my_picture.png" alt="Minha Foto">
-                <p class="main_info"> Olá! Atualmente estou trilhando minha formação como Cientista de Dados pela 
+                <p class="my_info"> Olá! Atualmente estou trilhando minha formação como Cientista de Dados pela 
                     <a href="https://www.datascienceacademy.com.br/" > <span style="color: Blue"> Data Science Academy </span></a>
                     e possuo um bacharel em Engenharia Mecânica pela Universidade Estadual de Maringá - UEM.
                     Sou apaixonado por jogos de estratégia e ciência e matemática computacional. Nas horas livres
@@ -38,70 +42,89 @@
                     entre em contato através das minhas redes sociais abaixo.
                 </p>
             </div>
-            <div>
-                <a class="my_info_anchors" href="https://www.instagram.com/kaiqueyuto/">Instagram</a>
-                <a class="my_info_anchors" href="https://github.com/Kaique-Yuto">GitHub</a>
-                <a class="my_info_anchors" href="https://www.linkedin.com/in/kaiqueyuto/">LinkedIn</a>
+            <div class =my_anchors_container>
+                <a class="my_anchors" href="https://www.instagram.com/kaiqueyuto/">Instagram</a>
+                <a class="my_anchors" href="https://github.com/Kaique-Yuto">GitHub</a>
+                <a class="my_anchors" href="https://www.linkedin.com/in/kaiqueyuto/">LinkedIn</a>
             </div>
-            <h1 class="section_title"> Alguns dos meus DashBoards</h1>
-            <div class="carousel">
-                <img src="\Screenshots\Screenshot_1.png" alt="Imagem 1">
-                <img src="\Screenshots\Screenshot_2.png" alt="Imagem 2">
-                <img src="\Screenshots\Screenshot_3.png" alt="Imagem 3">
-                <img src="\Screenshots\Screenshot_4.png" alt="Imagem 4">
-                <img src="\Screenshots\Screenshot_5.png" alt="Imagem 5">
-                <img src="\Screenshots\Screenshot_6.png" alt="Imagem 6">
-                <img src="\Screenshots\Screenshot_7.png" alt="Imagem 7">
-                <img src="\Screenshots\Screenshot_8.png" alt="Imagem 8">
-                <img src="\Screenshots\Screenshot_9.png" alt="Imagem 9">
-                <img src="\Screenshots\Screenshot_10.png" alt="Imagem 10">
-                <img src="\Screenshots\Screenshot_11.png" alt="Imagem 11">
+        </section>
+
+
+
+        <section class = "projects" id="projects">
+            <div class = "dashboards_section">
+                <h1 class="dashboards_section_title"> Alguns dos meus DashBoards</h1>
+                    <div class="carousel">
+                        <div><img src="\Screenshots\Screenshot_1.png" alt="Imagem 1"></div>
+                        <div><img src="\Screenshots\Screenshot_2.png" alt="Imagem 2"></div>
+                        <div><img src="\Screenshots\Screenshot_3.png" alt="Imagem 3"></div>
+                        <div><img src="\Screenshots\Screenshot_4.png" alt="Imagem 4"></div>
+                        <div><img src="\Screenshots\Screenshot_5.png" alt="Imagem 5"></div>
+                        <div><img src="\Screenshots\Screenshot_6.png" alt="Imagem 6"></div>
+                        <div><img src="\Screenshots\Screenshot_7.png" alt="Imagem 7"></div>
+                        <div><img src="\Screenshots\Screenshot_8.png" alt="Imagem 8"></div>
+                        <div><img src="\Screenshots\Screenshot_9.png" alt="Imagem 9"></div>
+                        <div><img src="\Screenshots\Screenshot_10.png" alt="Imagem 10"></div>
+                        <div><img src="\Screenshots\Screenshot_11.png" alt="Imagem 11"></div>
+                    </div>
+                    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+                    <script src="carousel.js"></script>
             </div>
-            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
-            <script src="carousel.js"></script>
 
-            <h1 class="section_title">Alguns dos meus Projetos</h1>
-            <h1 class ="project_title">Car sale's modelling </h1>
-            <div class="project_display">
-                <p>Neste exemplo nos deparamos com uma base de dados contendo informações sobre vendas de carros.
-                Meu trabalho foi treinar um modelo de machine learning para fazer previsões acerca de vendas futuras.
-                Os gráficos abaixo contém informações tanto sobre a base de dados, quanto sobre a perfomance do modelo obtido.</p>
-
-                <div class="car_sales_model_pictures">
-                    <img src="\car_sales_model\histogram.png" alt="Histograma do projeto Car_sales_model">
-                    <img src="\car_sales_model\price_x_mileage_scatter.png" alt="Scatterplot do projeto Car_sales_model">
+            <div class = "projects_subsection"> 
+                <h1 class="projects_subsection_title">Alguns dos meus Projetos</h1> <!-- Título da Subseção -->
+                <h1 class ="individual_projects_title">Car sale's modelling </h1>  <!-- Projeto: Car Sale's Modelling -->
+                <div class="individual_project_display">
+                    <p class="individual_project_description"> Neste projeto uma base de dados contendo informações sobre vendas de carros será usada para análise.
+                        Meu trabalho foi treinar um modelo de machine learning para fazer previsões acerca de vendas futuras.
+                        Os gráficos abaixo ilustram a perfomance do modelo obtido.</p>
+                    <div class="car_sales_model_pictures">
+                        <img src="\car_sales_model\age_hist.png" alt="Histograma do projeto Car_sales_model">
+                        <img src="\car_sales_model\price_hist.png" alt="Scatterplot do projeto Car_sales_model">
+                    </div>
                 </div>
             </div>
-            </p>
-            <p>#
-            </p>
-            <p>#
-            </p>
-            <p>#
-            </p>
-            <p>#
-            </p>
-            <p>#
-            </p>
-            <p>#
-            </p>
-            <p>#
-            </p>
-            <p>#
-            </p>
-            <p>#
-            </p>
-            <p>#
-            </p>
-            <p>#
-            </p>
-            <p>#
-            </p>
 
-        </section>    
+            <div class = "projects_subsection"> 
+                <h1 class ="individual_projects_title">Market Basket Analysis </h1> <!-- Projeto: Market Basket AnalysisS -->
+                <div class="individual_project_display">
+                    <p> Este projeto é uma exploração das regras de associação entre produtos vendidos em uma superloja varejista.
+                        O intuito do projeto é determinar relações existentes entre produtos semelhantes baseado em transações de clientes.
+                    </p>
+                 </div>
+
+            </div>
+                
+        
+        </section> <!-- Final da Seção de Projetos -->
+
+        <section id="resume"></section>
+            <p>#
+            </p>
+            <p>#
+            </p>
+            <p>#
+            </p>
+            <p>#
+            </p>
+            <p>#
+            </p>
+            <p>#
+            </p>
+            <p>#
+            </p>
+            <p>#
+            </p>
+            <p>#
+            </p>
+            <p>#
+            </p>
+            <p>#
+            </p>
+            <p>#
+            </p>   
     </main>
-
     <footer></footer>
 </body>
 
