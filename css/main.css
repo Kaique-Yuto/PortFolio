@@ -220,6 +220,7 @@ body{
     flex-direction: column;
     align-items: start;
     justify-content: center;
+    height: auto;
 }
 
 .individual_project_description{
@@ -232,7 +233,8 @@ body{
     align-items: center;
     justify-content: center;
     gap: 15px;
-    margin: 1% 15% 1% 15%;
+    margin: 1% 15% 1% 0%;
+    max-height: inherit;
 }
 
 .market_basket_analysis_picture{
