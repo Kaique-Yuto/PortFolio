@@ -29,18 +29,18 @@ body{
 }
 
 .header {
-    font-size: 18px;
+    font-size: 2vh;
     background-color: black;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    gap: 40px;
-    padding-right: 300px;
-    height: 50px;
+    gap: 1vw;
+    padding-right: 15.625vw;
+    height: 6vh;
     position: fixed;
     top: 0;
     right: 0;
-    width: calc(100% - 300px); /* Ajusta a largura total considerando o espaço ocupado pela distância */
+    width: calc(100% - 15.625vw); /* Ajusta a largura total considerando o espaço ocupado pela distância */
     z-index: 64;
 }
 
@@ -54,7 +54,7 @@ body{
     position: absolute;
     top: 0;
     right: 0;
-    width: 300px;
+    width: 15.625vw;
     height: 100%;
     background-color: black;
     z-index: -1; /* Defina um valor menor de z-index para a faixa preta */
@@ -120,8 +120,8 @@ body{
 }
 
 .my_picture{
-    width: 200px; 
-    height: 200px; 
+    width: 12vw; 
+    height: 12vw; 
     border-radius: 50%; 
     object-fit: cover; /* Redimensiona a imagem para caber no círculo */
     margin-right: 20px;
@@ -174,9 +174,11 @@ body{
 }
 
 .dashboards_section_title{
-    font-size: 30px;
+    font-size: 42px;
     margin-bottom: 10px;
-    font-weight: 500;
+    font-weight: 900;
+    font-style: italic;
+
 }
 
 .carousel{
@@ -200,9 +202,10 @@ body{
 }
 
 .projects_subsection_title{
-    font-size: 30px;
-    font-weight: 500;
-    margin: 5% 15% 20px 0%;
+    font-size: 42px;
+    font-weight: 900;
+    font-style: italic;
+    margin: 5% 15% 0 0%;
     justify-content: left;
     align-self: start;
 }
@@ -211,8 +214,9 @@ body{
     font-size: 28px;
     margin-bottom: 5px;
     font-weight: 500;
-    margin-top: 30px;
+    margin-top: 5%;
     font-weight: 600;
+    font-style: italic;
 } 
 
 .individual_project_display{
@@ -240,4 +244,22 @@ body{
 .market_basket_analysis_picture{
     max-width: 60%;
     margin-top: 1%;
+}
+
+.hospital_project_container{
+ display: flex;
+ flex-direction: row;
+}
+
+.hospital_project_description{
+font-size: 24px;
+align-items: center;
+justify-content: center;
+margin: 2% 6% 0 1%;
+}
+
+.hospital_picture{
+    margin-top: 1%;
+    width: 65%;
+    aspect-ratio: 1.5/1;
 }
