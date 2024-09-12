@@ -27,120 +27,128 @@
     </nav>
 
     <main>
-        <section class="home_content" id="home">
-            <h1 class="home_title">Kaique Yuto Rodrigues </h1>
-            <hr class="line_bellow_home_title">
-            <p class="my_brief_summary">Estudante de Ciência de Dados e Engenheiro Mecânico.</p>
-            <div class="main_info_and_my_picture_container">
-                <img class= "my_picture" src="assets/my_picture.png" alt="Minha Foto">
-                <p class="my_info"> Olá! Atualmente estou trilhando minha formação como Cientista de Dados pela 
-                    <a href="https://www.datascienceacademy.com.br/" class="data_science_academy_anchor">Data Science Academy</a>
-                    e possuo um bacharel em Engenharia Mecânica pela Universidade Estadual de Maringá - UEM.
-                    Sou apaixonado por jogos de estratégia e ciência e matemática computacional. Nas horas livres
-                    gosto de cozinhar e passar um tempo com meus amigos.
-                    Se você gostaria de conversar comigo sobre Dados, programação e engenharia, por favor
-                    entre em contato através das minhas redes sociais abaixo.
-                </p>
-            </div>
-            <div class =my_anchors_container>
-                <a class="my_anchors" href="https://www.instagram.com/kaiqueyuto/">Instagram</a>
-                <a class="my_anchors" href="https://github.com/Kaique-Yuto">GitHub</a>
-                <a class="my_anchors" href="https://www.linkedin.com/in/kaiqueyuto/">LinkedIn</a>
-            </div>
-        </section>
+        <section class = "page_container"> <!-- Seção para dividir entre porção central (de rolagem) e laterais-->
+            <section class = "lateral_rectangles"></section> <!-- estes são os retângulos vazios ao canto da página-->
 
-
-
-        <section class = "projects" id="projects">
-            <div class = "dashboards_section">
-                <h1 class="dashboards_section_title">Meus DashBoards</h1>
-                    <div class="carousel">
-                        <div><img src="assets/Screenshots/Screenshot_1.png" alt="Imagem 1"></div>
-                        <div><img src="assets/Screenshots/Screenshot_2.png" alt="Imagem 2"></div>
-                        <div><img src="assets/Screenshots/Screenshot_3.png" alt="Imagem 3"></div>
-                        <div><img src="assets/Screenshots/Screenshot_4.png" alt="Imagem 4"></div>
-                        <div><img src="assets/Screenshots/Screenshot_5.png" alt="Imagem 5"></div>
-                        <div><img src="assets/Screenshots/Screenshot_6.png" alt="Imagem 6"></div>
-                        <div><img src="assets/Screenshots/Screenshot_7.png" alt="Imagem 7"></div>
-                        <div><img src="assets/Screenshots/Screenshot_8.png" alt="Imagem 8"></div>
-                        <div><img src="assets/Screenshots/Screenshot_9.png" alt="Imagem 9"></div>
-                        <div><img src="assets/Screenshots/Screenshot_10.png" alt="Imagem 10"></div>
-                        <div><img src="assets/Screenshots/Screenshot_11.png" alt="Imagem 11"></div>
-                    </div>
-                    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-                    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-                    <script src="assets/carousel.js"></script>
-            </div>
-
-            <div class = "projects_subsection"> 
-                <h1 class="projects_subsection_title">Meus Projetos</h1> <!-- Título da Subseção -->
-                <h1 class ="individual_projects_title">Car sale's modelling </h1>  <!-- Projeto: Car Sale's Modelling -->
-                <div class="individual_project_display">
-                    <p class="individual_project_description"> Neste projeto uma base de dados contendo informações sobre vendas de carros será usada para análise.
-                        Meu trabalho foi treinar um modelo de machine learning para fazer previsões acerca de vendas futuras.
-                        Os gráficos abaixo ilustram a perfomance do modelo obtido.</p>
-                    <div class="car_sales_model_pictures">
-                        <img src="assets/car_sales_model/age_hist.png" alt="Histograma do projeto Car_sales_model">
-                        <img src="assets/car_sales_model/price_hist.png" alt="Scatterplot do projeto Car_sales_model">
-                    </div>
-                </div>
-            </div>
-
-            <div class = "projects_subsection"> 
-                <h1 class ="individual_projects_title">Market Basket Analysis </h1> <!-- Projeto: Market Basket Analysis -->
-                <div class="individual_project_display">
-                    <p class="individual_project_description"> Este projeto é uma exploração das regras de associação entre produtos vendidos em uma superloja varejista.
-                        O intuito do projeto é determinar relações existentes entre produtos semelhantes baseado em transações de clientes.
-                    </p>
-                    <img src="assets/market_basket_analysis/Screenshot_1.png" 
-                    alt="Tabela de métricas de associação entre os produtos vendidos." class="market_basket_analysis_picture">
-                </div>
-            </div>
+            <section class = "center_container">
                 
-            <div class = "projects_subsection"> 
-                <h1 class ="individual_projects_title">Machine Learning Model for Hospital Expenses </h1> <!-- Projeto: Hospital Expenses Forecast -->
-                <div class="individual_project_display">
-                    <p class="individual_project_description"> 
-                        Este projeto tem como foco a criação de um modelo de aprendizado de máquina para prever com precisão 
-                        os custos hospitalares. Ao utilizar algoritmos e técnicas estatísticas, o modelo analisa um 
-                        conjunto abrangente de dados descritivos dos clientes passados. Ele fornece estimativas precisas de custos,
-                        possibilitando uma gestão financeira eficaz e planejamento estratégico em instituições de saúde.
-                    </p>
-                    <div class="hospital_project_container">
-                        <img src="assets\Hospital\scatter_with_line.png"
-                        alt="Gráfico de dispersão com linha de regressão" class="hospital_picture">
-                        <p class= "hospital_project_description">A linha vermelha representa acurácia perfeita, quanto <strong> próximos</strong>
-                            os pontos estão da linha, <strong >melhor</strong> é a previsão do modelo</p>
+                <section class="home_content" id="home">
+                    <h1 class="home_title">Kaique Yuto Rodrigues </h1>
+                    <hr class="line_bellow_home_title">
+                    <p class="my_brief_summary">Estudante de Ciência de Dados e Engenheiro Mecânico.</p>
+                    <div class="main_info_and_my_picture_container">
+                        <img class= "my_picture" src="assets/my_picture.png" alt="Minha Foto">
+                        <p class="my_info"> Olá! Atualmente estou trilhando minha formação como Cientista de Dados pela 
+                            <a href="https://www.datascienceacademy.com.br/" class="data_science_academy_anchor">Data Science Academy</a>
+                            e possuo um bacharel em Engenharia Mecânica pela Universidade Estadual de Maringá - UEM.
+                            Sou apaixonado por jogos de estratégia e ciência e matemática computacional. Nas horas livres
+                            gosto de cozinhar e passar um tempo com meus amigos.
+                            Se você gostaria de conversar comigo sobre Dados, programação e engenharia, por favor
+                            entre em contato através das minhas redes sociais abaixo.
+                        </p>
                     </div>
-                </div>
-            </div>
-
-            <div class = "projects_subsection"> 
-                <h1 class ="individual_projects_title">Evaluation and comparison between ML algorithms with Microsoft Azure Machine Learning</h1> <!-- Projeto: Comparação de modelos no Microsoft Azure -->
-                <div class="individual_project_display">
-                    <p class="individual_project_description"> 
-                        Este projeto teve como foco a seleção de um modelo de machine learning usando a ferramenta Microsoft Azure Machine Learning.
-                        Vários modelos e dados diferentes foram utilizados para o treinamento e avaliação dos modelos. Ao final, escolheu-se o modelo
-                        com as melhores métricas de performance.
-                    </p>
-                    <div class="carousel">
-                        <div><img src="assets\Azure\ml_cluster_altered.png" alt="Imagem 1"></div>
-                        <div><img src="assets\Azure\section_1_altered.png" alt="Imagem 2"></div>
-                        <div><img src="assets\Azure\section_2_altered.png" alt="Imagem 3"></div>
+                    <div class =my_anchors_container>
+                        <a class="my_anchors" href="https://www.instagram.com/kaiqueyuto/">Instagram</a>
+                        <a class="my_anchors" href="https://github.com/Kaique-Yuto">GitHub</a>
+                        <a class="my_anchors" href="https://www.linkedin.com/in/kaiqueyuto/">LinkedIn</a>
                     </div>
-                    <img>
-                </div>
-            </div>
+                </section>
+            
+
+                <section class = "projects" id="projects">
+                    <div class = "dashboards_section">
+                        <h1 class="dashboards_section_title">Meus DashBoards</h1>
+                            <div class="carousel">
+                                <div><img src="assets/Screenshots/Screenshot_1.png" alt="Imagem 1"></div>
+                                <div><img src="assets/Screenshots/Screenshot_2.png" alt="Imagem 2"></div>
+                                <div><img src="assets/Screenshots/Screenshot_3.png" alt="Imagem 3"></div>
+                                <div><img src="assets/Screenshots/Screenshot_4.png" alt="Imagem 4"></div>
+                                <div><img src="assets/Screenshots/Screenshot_5.png" alt="Imagem 5"></div>
+                                <div><img src="assets/Screenshots/Screenshot_6.png" alt="Imagem 6"></div>
+                                <div><img src="assets/Screenshots/Screenshot_7.png" alt="Imagem 7"></div>
+                                <div><img src="assets/Screenshots/Screenshot_8.png" alt="Imagem 8"></div>
+                                <div><img src="assets/Screenshots/Screenshot_9.png" alt="Imagem 9"></div>
+                                <div><img src="assets/Screenshots/Screenshot_10.png" alt="Imagem 10"></div>
+                                <div><img src="assets/Screenshots/Screenshot_11.png" alt="Imagem 11"></div>
+                            </div>
+                            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                            <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+                            <script src="assets/carousel.js"></script>
+                    </div>
+
+                    <div class = "projects_subsection"> 
+                        <h1 class="projects_subsection_title">Meus Projetos</h1> <!-- Título da Subseção -->
+                        <h1 class ="individual_projects_title">Car sale's modelling </h1>  <!-- Projeto: Car Sale's Modelling -->
+                        <div class="individual_project_display">
+                            <p class="individual_project_description"> Neste projeto uma base de dados contendo informações sobre vendas de carros será usada para análise.
+                                Meu trabalho foi treinar um modelo de machine learning para fazer previsões acerca de vendas futuras.
+                                Os gráficos abaixo ilustram a perfomance do modelo obtido.</p>
+                            <div class="car_sales_model_pictures">
+                                <img src="assets/car_sales_model/age_hist.png" alt="Histograma do projeto Car_sales_model">
+                                <img src="assets/car_sales_model/price_hist.png" alt="Scatterplot do projeto Car_sales_model">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "projects_subsection"> 
+                        <h1 class ="individual_projects_title">Market Basket Analysis </h1> <!-- Projeto: Market Basket Analysis -->
+                        <div class="individual_project_display">
+                            <p class="individual_project_description"> Este projeto é uma exploração das regras de associação entre produtos vendidos em uma superloja varejista.
+                                O intuito do projeto é determinar relações existentes entre produtos semelhantes baseado em transações de clientes.
+                            </p>
+                            <img src="assets/market_basket_analysis/Screenshot_1.png" 
+                            alt="Tabela de métricas de associação entre os produtos vendidos." class="market_basket_analysis_picture">
+                        </div>
+                    </div>
+                        
+                    <div class = "projects_subsection"> 
+                        <h1 class ="individual_projects_title">Machine Learning Model for Hospital Expenses </h1> <!-- Projeto: Hospital Expenses Forecast -->
+                        <div class="individual_project_display">
+                            <p class="individual_project_description"> 
+                                Este projeto tem como foco a criação de um modelo de aprendizado de máquina para prever com precisão 
+                                os custos hospitalares. Ao utilizar algoritmos e técnicas estatísticas, o modelo analisa um 
+                                conjunto abrangente de dados descritivos dos clientes passados. Ele fornece estimativas precisas de custos,
+                                possibilitando uma gestão financeira eficaz e planejamento estratégico em instituições de saúde.
+                            </p>
+                            <div class="hospital_project_container">
+                                <img src="assets\Hospital\scatter_with_line.png"
+                                alt="Gráfico de dispersão com linha de regressão" class="hospital_picture">
+                                <p class= "hospital_project_description">A linha vermelha representa acurácia perfeita, quanto <strong> próximos</strong>
+                                    os pontos estão da linha, <strong >melhor</strong> é a previsão do modelo</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "projects_subsection"> 
+                        <h1 class ="individual_projects_title">Evaluation and comparison between ML algorithms with Microsoft Azure Machine Learning</h1> <!-- Projeto: Comparação de modelos no Microsoft Azure -->
+                        <div class="individual_project_display">
+                            <p class="individual_project_description"> 
+                                Este projeto teve como foco a seleção de um modelo de machine learning usando a ferramenta Microsoft Azure Machine Learning.
+                                Vários modelos e dados diferentes foram utilizados para o treinamento e avaliação dos modelos. Ao final, escolheu-se o modelo
+                                com as melhores métricas de performance.
+                            </p>
+                            <div class="carousel">
+                                <div><img src="assets\Azure\ml_cluster_altered.png" alt="Imagem 1"></div>
+                                <div><img src="assets\Azure\section_1_altered.png" alt="Imagem 2"></div>
+                                <div><img src="assets\Azure\section_2_altered.png" alt="Imagem 3"></div>
+                            </div>
+                            <img>
+                        </div>
+                    </div>
 
 
 
 
-        </section> <!-- Final da Seção de Projetos -->
+                </section> <!-- Final da Seção de Projetos -->
 
-        <section id="resume"></section>   <!-- Seção do currículo-->    
+                <section id="resume"></section>   <!-- Seção do currículo-->  
+            </section>
+            <section class = "lateral_rectangles"></section> <!-- estes são os retângulos vazios ao canto da página-->
+        </section>  
     </main>
-    <footer>
-        <p>*Tenha em mente que esta página web está constantemente em desenvolvimento. Caso perceba quaisquer
+
+    <footer class="footer" id="footer">
+        <p class="footer_text">*Tenha em mente que esta página web está constantemente em desenvolvimento. Caso perceba quaisquer
              inconsistências por favor entre em contato pelas redes sociais acima ou me mande um e-mail!
              <a href="mailto:kaiqueyuto1@gmail.com"><strong>kaiqueyuto1@gmail.com</strong></a></p>
     </footer>

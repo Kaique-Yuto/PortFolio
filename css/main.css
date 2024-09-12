@@ -3,6 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 
 
+:root{
+    --header-height: 6vh;
+}
 
 *{
     margin: 0;
@@ -18,8 +21,17 @@ a:visited {
 body{
     height: 100vh;
     box-sizing: border-box;
-    background-color: #FFFAF1;
+    background-color: #FCFCFC;
     color: #F6F6F6;
+    display: flex;
+    flex-direction: column;
+}
+
+.main{
+    display: flex;
+    align-items: top;
+    flex-direction: row;
+    margin-top: var(--header-height);
 }
 
 .data_science_academy_anchor{
@@ -36,7 +48,7 @@ body{
     justify-content: flex-end;
     gap: 1vw;
     padding-right: 15.625vw;
-    height: 6vh;
+    height: var(--header-height);
     position: fixed;
     top: 0;
     right: 0;
@@ -76,17 +88,31 @@ body{
     background-color: gray;
 }
 
-.main{
-    margin: 10% 15%;
+.lateral_rectangles{
+    width: 25%;
+    background-color: #FFFEF2;
+}
+
+
+.page_container{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row;
+
+}
+
+.center_container{
+    display: flex;
     flex-direction: column;
+    background-color: #FFFBF2;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-right: 1%;
+    margin-left: 1%;
 
 }
 
 .home_content{
-    margin: 10% 15%;
+    margin: 0 0 0 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -264,4 +290,16 @@ margin: 2% 6% 0 1%;
 .hospital_picture{
     margin-top: 1%;
     width: 35%;
+}
+
+.footer{
+    background-color: black;
+    height: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.footer_text{
+    font-size: 6rem;
+    color: white;
 }
