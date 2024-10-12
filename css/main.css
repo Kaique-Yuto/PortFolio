@@ -40,6 +40,12 @@ body{
     color: #324AB2;
 }
 
+.header{
+    height: 15vh;
+    background-color: black;
+}
+
+/*
 .header {
     font-size: 2vh;
     background-color: black;
@@ -52,13 +58,13 @@ body{
     position: fixed;
     top: 0;
     right: 0;
-    width: calc(100% - 15.625vw); /* Ajusta a largura total considerando o espaço ocupado pela distância */
+    width: calc(100% - 15.625vw); /* Ajusta a largura total considerando o espaço ocupado pela distância 
     z-index: 64;
 }
 
 .header-wrapper {
     position: relative;
-    z-index: 65; /* Aumente o valor do z-index para o cabeçalho */
+    z-index: 65; /* Aumente o valor do z-index para o cabeçalho 
 }
 
 .header::after {
@@ -69,19 +75,20 @@ body{
     width: 15.625vw;
     height: 100%;
     background-color: black;
-    z-index: -1; /* Defina um valor menor de z-index para a faixa preta */
+    z-index: -1; /* Defina um valor menor de z-index para a faixa preta 
 }
-
+*/
 .header_buttons_container{
     display:flex;
     flex-direction: row;
+    height: 100%;
     gap: 20px;
+    
 }
-
 
 .header_buttons{
     color:white;
-    height: 50px;
+    height: 50%;
 }
 
 .header_buttons:hover{
