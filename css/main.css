@@ -21,8 +21,8 @@ a:visited {
 body{
     height: 100vh;
     box-sizing: border-box;
-    background-color: #FCFCFC;
-    color: #F6F6F6;
+    background-color: #1E1E2E;
+    color: #1E1E2E;
     display: flex;
     flex-direction: column;
     margin-top: 60px;
@@ -50,7 +50,7 @@ section {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #333;
+    background-color: #2B2D42;
     padding: 10px 0;
     box-shadow: 0 4px 2px -2px rgba(0,0,0,0.2);
     z-index: 1000;
@@ -69,20 +69,20 @@ section {
 }
 
 .header_buttons {
-    color: white;
+    color: #EDF2F4;
     text-decoration: none;
     font-size: 18px;
     padding: 10px 20px;
 }
 
 .header_buttons:hover {
-    background-color: #575757;
+    background-color: #8D99AE;
     border-radius: 4px;
 }
 
 .lateral_rectangles{
     width: 25%;
-    background-color: #FFFEF2;
+    background-color: #1E1E2E;
 }
 
 
@@ -95,11 +95,12 @@ section {
 .center_container{
     display: flex;
     flex-direction: column;
-    background-color: #FFFBF2;
+    background-color: #edeff4;
     margin-top: 2%;
     margin-bottom: 2%;
     margin-right: 1%;
     margin-left: 1%;
+    border-radius: 20px;
 
 }
 
@@ -184,6 +185,10 @@ section {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+#projects-section-title{
+    font-size: 42px;
 }
 
 .dashboards_section{
