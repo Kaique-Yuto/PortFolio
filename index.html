@@ -37,13 +37,16 @@
                     <p class="my_brief_summary">Estudante de Ciência de Dados e Engenheiro Mecânico.</p>
                     <div class="main_info_and_my_picture_container">
                         <img class= "my_picture" src="assets/my_picture.png" alt="Minha Foto">
-                        <p class="my_info"> Olá! Atualmente estou trilhando minha formação como Cientista de Dados pela 
-                            <a href="https://www.datascienceacademy.com.br/" class="data_science_academy_anchor">Data Science Academy</a>
-                            e possuo um bacharel em Engenharia Mecânica pela Universidade Estadual de Maringá - UEM.
-                            Sou apaixonado por jogos de estratégia e ciência e matemática computacional. Nas horas livres
+                        <p class="my_info"> Olá! Sou um estudande de Ciência de Dados e trabalho como Analista 
+                            de Planejamento Acadêmico PL pela <a href="https://www.vitru.com.br/pt_BR" class = text-hyperlink>
+                            Vitru Educação</a>, desde 2023. Possuo um bacharel em Engenharia Mecânica pela 
+                            <a href="https://www.uem.br/" class=text-hyperlink>Universidade Estadual de Maringá - UEM.</a> 
+                            Atualmente cursando uma formação de Cientista de Dados pela 
+                            <a href="https://www.datascienceacademy.com.br/" class=text-hyperlink>Data Science Academy</a>. 
+                            Sou apaixonado por jogos eletrônicos, de estratégia, e também por ciência e matemática. Nas horas livres
                             gosto de cozinhar e passar um tempo com meus amigos.
-                            Se você gostaria de conversar comigo sobre Dados, programação e engenharia, por favor
-                            entre em contato através das minhas redes sociais abaixo.
+                            Se você gostaria de conversar comigo sobre Dados, programação e engenharia, por favor, não deixe
+                            de me enviar uma mensagem pelas redes sociais abaixo!
                         </p>
                     </div>
                     <div class =my_anchors_container>
@@ -54,7 +57,12 @@
                 </section>
             
                 <div class = "dashboards_section">
-                    <h1 class="dashboards_section_title">Meus DashBoards</h1>
+                    <hr class="sep-line">
+                    <div id="dashboards-section-intro">
+                        Abaixo você pode conferir alguns de meus projetos e estudos pessoais.
+                        Lembre-se, se tiver alguma dúvida ou ponto para discussão, minhas redes sociais estão acima.
+                    </div>
+                    <h1 class="dashboards_section_title">Alguns DashBoards</h1>
                         <div class="carousel">
                             <div><img src="assets/Screenshots/Screenshot_1.png" alt="Imagem 1"></div>
                             <div><img src="assets/Screenshots/Screenshot_2.png" alt="Imagem 2"></div>
@@ -74,13 +82,14 @@
                 </div>
 
                 <section class="projects" id="projects">
-                    <h1 id ="projects-section-title"> Meus Projetos</h1>
+                    <h1 id ="projects-section-title"> Alguns Projetos</h1>
                     <div class = "project"> 
                         <div class="project-title" onclick="toggleDetails(this)">Car sale's modelling </div>  <!-- Projeto: Car Sale's Modelling -->
                         <div class="project-details">
-                            <p class="project-description"> Neste projeto uma base de dados contendo informações sobre vendas de carros será usada para análise.
-                                Meu trabalho foi treinar um modelo de machine learning para fazer previsões acerca de vendas futuras.
-                                Os gráficos abaixo ilustram a perfomance do modelo obtido.</p>
+                            <p class="project-description">Neste projeto, trabalhei com uma base de dados contendo informações sobre vendas 
+                                de carros com o objetivo de prever tendências futuras. Utilizei técnicas de machine learning para desenvolver 
+                                um modelo de classificação binária, capaz de prever se uma venda seria bem-sucedida ou não, 
+                                com base em características específicas de cada carro. Abaixo estão </p>
                             <div class="car_sales_model_pictures">
                                 <img src="assets/car_sales_model/age_hist.png" alt="Histograma do projeto Car_sales_model">
                                 <img src="assets/car_sales_model/price_hist.png" alt="Scatterplot do projeto Car_sales_model">
@@ -130,6 +139,17 @@
                         </div>
                     </div>
 
+                    <div class = "project"> 
+                        <div class ="project-title" onclick="toggleDetails(this)">KNN digit classifier</div> <!-- Projeto: Comparação de modelos no Microsoft Azure -->
+                        <div class="project-details">
+                            <p class="project-description"> 
+                                Um simples modelo KNN foi treinado para classificar um desenho de 8x8 pixels em um dígito. Divirta-se
+                            </p>
+
+                            <div id="grid-container"></div>
+                            <button id="reset-button">Reset Canvas</button> <!-- Reset button -->
+                        </div>
+                    </div>
                 </section> <!-- Final da Seção de Projetos -->
 
                 <section id="resume"></section>   <!-- Seção do currículo-->  
@@ -138,12 +158,15 @@
         </section>  
     </main>
 
+
+    <script src="assets/grid.js"></script>
     <script>
         function toggleDetails(element) {
             var project = element.parentElement;
             project.classList.toggle('expanded');
         }
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/onnxruntime-web@1.7.0/dist/ort.min.js"></script>
 
     <footer class="footer" id="footer">
         <p class="footer_text">*Tenha em mente que esta página web está constantemente em desenvolvimento. Caso perceba quaisquer
