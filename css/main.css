@@ -360,3 +360,116 @@ margin: 2% 6% 0 1%;
 .grid-cell:hover {
     transition: background-color 0.3s;
 }
+
+.popup {
+    display: none; /* Esconde o pop-up inicialmente */
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo semi-transparente */
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; 
+    transform: scale(0.9); 
+    transition: opacity 0.3s ease, transform 0.3s ease; 
+  }
+  
+  .popup-header {
+    background-color: #222;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .popup-header h2 {
+    margin: 0;
+    font-size: 30px;
+  }
+  
+  .popup-header .close-btn {
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .popup-body {
+    display: flex;
+    background-color: #fff;
+    width: 90%;
+    max-width: 1200px;
+    height: 80%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .popup-description {
+    padding: 20px;
+    width: 40%;
+    text-align: justify;
+    white-space: normal; 
+    overflow-wrap: break-word; 
+    word-wrap: break-word; 
+    overflow: hidden; 
+    background-color: #f9f9f9;
+    border-right: 1px solid #ddd;
+    
+  }
+  
+  .popup-description h3, .popup-description h4 {
+    margin-top: 0;
+  }
+  
+  .popup-description ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .popup-description ul li {
+    background-color: #ddd;
+    color: #333;
+    padding: 5px 10px;
+    margin: 5px 5px;
+    border-radius: 5px;
+    display: inline-block;
+  }
+  
+  .popup-images {
+    padding: 20px;
+    width: 60%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .popup-images img {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+  
+  .popup-images p {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  .popup-published-date {
+    font-size: 14px;
+    color: #666;
+    margin-top: 20px;
+  }
+.popup.show {
+display: flex; /* Exibe o pop-up */
+opacity: 1; /* Torna visível */
+transform: scale(1); /* Tamanho original */
+}

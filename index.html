@@ -4,13 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfólio</title>
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css">
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
-    <script src="carousel.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/onnxruntime-web/dist/ort.min.js"></script>
 
     
@@ -57,119 +54,62 @@
                         <a class="my_anchors" href="https://www.linkedin.com/in/kaiqueyuto/">LinkedIn</a>
                     </div>
                 </section>
-            
-                <div class = "dashboards_section">
-                    <hr class="sep-line">
-                    <div id="dashboards-section-intro">
-                        Abaixo você pode conferir alguns de meus projetos e estudos pessoais.
-                        Lembre-se, se tiver alguma dúvida ou ponto para discussão, minhas redes sociais estão acima.
-                    </div>
-                    <h1 class="dashboards_section_title">Alguns DashBoards</h1>
-                        <div class="carousel">
-                            <div><img src="assets/Screenshots/Screenshot_1.png" alt="Imagem 1"></div>
-                            <div><img src="assets/Screenshots/Screenshot_2.png" alt="Imagem 2"></div>
-                            <div><img src="assets/Screenshots/Screenshot_3.png" alt="Imagem 3"></div>
-                            <div><img src="assets/Screenshots/Screenshot_4.png" alt="Imagem 4"></div>
-                            <div><img src="assets/Screenshots/Screenshot_5.png" alt="Imagem 5"></div>
-                            <div><img src="assets/Screenshots/Screenshot_6.png" alt="Imagem 6"></div>
-                            <div><img src="assets/Screenshots/Screenshot_7.png" alt="Imagem 7"></div>
-                            <div><img src="assets/Screenshots/Screenshot_8.png" alt="Imagem 8"></div>
-                            <div><img src="assets/Screenshots/Screenshot_9.png" alt="Imagem 9"></div>
-                            <div><img src="assets/Screenshots/Screenshot_10.png" alt="Imagem 10"></div>
-                            <div><img src="assets/Screenshots/Screenshot_11.png" alt="Imagem 11"></div>
-                        </div>
-                        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-                        <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-                        <script src="assets/carousel.js"></script>
-                </div>
 
                 <section class="projects" id="projects">
                     <h1 id ="projects-section-title"> Alguns Projetos</h1>
-                    <div class = "project"> 
-                        <div class="project-title" onclick="toggleDetails(this)">Car sale's modelling </div>  <!-- Projeto: Car Sale's Modelling -->
-                        <div class="project-details">
-                            <p class="project-description">Neste projeto, trabalhei com uma base de dados contendo informações sobre vendas 
-                                de carros com o objetivo de prever tendências futuras. Utilizei técnicas de machine learning para desenvolver 
-                                um modelo de classificação binária, capaz de prever se uma venda seria bem-sucedida ou não, 
-                                com base em características específicas de cada carro. Abaixo estão </p>
-                            <div class="car_sales_model_pictures">
-                                <img src="assets/car_sales_model/age_hist.png" alt="Histograma do projeto Car_sales_model">
-                                <img src="assets/car_sales_model/price_hist.png" alt="Scatterplot do projeto Car_sales_model">
-                            </div>
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/purchase_intention/thumbnail.png" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Projeto 1</h5>
+                            <p class="card-text">Descrição breve do Projeto 1.</p>
+                            <a href="#" class="btn btn-primary" data-project="project1">Ver mais</a>
                         </div>
                     </div>
-
-                    <div class = "project"> 
-                        <div class="project-title" onclick="toggleDetails(this)">Market Basket Analysis </div> <!-- Projeto: Market Basket Analysis -->
-                        <div class="project-details">
-                            <p class="project-description"> 
-                                Este projeto é uma exploração das regras de associação entre produtos vendidos em uma superloja varejista.
-                                O intuito do projeto é determinar relações existentes entre produtos semelhantes baseado em transações de clientes.
-                            </p>
-                            <img src="assets/market_basket_analysis/Screenshot_1.png" 
-                            alt="Tabela de métricas de associação entre os produtos vendidos." class="market_basket_analysis_picture">
+                    
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/Hospital/thumbnail.png" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Projeto 2</h5>
+                            <p class="card-text">Descrição breve do Projeto 2.</p>
+                            <a href="#" class="btn btn-primary" data-project="project2">Ver mais</a>
                         </div>
                     </div>
-                        
-                    <div class = "project"> 
-                        <div class ="project-title" onclick="toggleDetails(this)">Machine Learning Model for Hospital Expenses </div> <!-- Projeto: Hospital Expenses Forecast -->
-                        <div class="project-details">
-                            <p class="project-description"> 
-                                Este projeto tem como foco a criação de um modelo de aprendizado de máquina para prever com precisão 
-                                os custos hospitalares. Ao utilizar algoritmos e técnicas estatísticas, o modelo analisa um 
-                                conjunto abrangente de dados descritivos dos clientes passados. Ele fornece estimativas precisas de custos,
-                                possibilitando uma gestão financeira eficaz e planejamento estratégico em instituições de saúde.
-                            </p>
-                            <img src="assets\Hospital\scatter_with_line.png">
+                    
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/market_basket_analysis/thumbnail.png" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Projeto 3</h5>
+                            <p class="card-text">Descrição breve do Projeto 3.</p>
+                            <a href="#" class="btn btn-primary" data-project="project3">Ver mais</a>
                         </div>
                     </div>
-
-                    <div class = "project"> 
-                        <div class ="project-title" onclick="toggleDetails(this)">Evaluation and comparison between ML algorithms with Microsoft Azure Machine Learning</div> <!-- Projeto: Comparação de modelos no Microsoft Azure -->
-                        <div class="project-details">
-                            <p class="project-description"> 
-                                Este projeto teve como foco a seleção de um modelo de machine learning usando a ferramenta Microsoft Azure Machine Learning.
-                                Vários modelos e dados diferentes foram utilizados para o treinamento e avaliação dos modelos. Ao final, escolheu-se o modelo
-                                com as melhores métricas de performance.
-                            </p>
-                            <div class="carousel">
-                                <div><img src="assets\Azure\ml_cluster_altered.png" alt="Imagem 1"></div>
-                                <div><img src="assets\Azure\section_1_altered.png" alt="Imagem 2"></div>
-                                <div><img src="assets\Azure\section_2_altered.png" alt="Imagem 3"></div>
-                            </div>
-                            <img>
+                    
+                    <div id="popup" class="popup">
+                        <div class="popup-header">
+                          <h2 id="popup-title">Título do Projeto</h2>
+                          <span class="close-btn">&times;</span>
                         </div>
-                    </div>
-
-                    <!----
-                        <div class = "project"> 
-                            
-                            <div class ="project-title" onclick="toggleDetails(this)">KNN digit classifier</div>  
-                            <div class="project-details">
-                                <p class="project-description"> 
-                                    Um simples modelo KNN foi treinado para classificar um desenho de 8x8 pixels em um dígito. Divirta-se
-                                </p>
-
-                                <div id="grid-container"></div>
-                                <button id="reset-button">Reset Canvas</button>  
-                                <button id="predict-button">Predict</button>
-                                <div id="result">Predicted digit: </div>
-
-                            </div>
+                        <div class="popup-body">
+                          <div class="popup-description">
+                            <h3>Project description</h3>
+                            <p id="popup-description">Descrição detalhada do projeto.</p>
+                      
+                            <h4>Skills and deliverables</h4>
+                            <ul id="popup-skills">
+                              <!-- Skills serão inseridas aqui -->
+                            </ul>
+                      
+                            <p class="popup-published-date">Published on <span id="popup-date">Jan 8, 2025</span></p>
+                          </div>
+                          <div class="popup-images" id="popup-images">
+                            <!-- As imagens serão carregadas dinamicamente -->
+                          </div>
                         </div>
-                    -->
-
-
-                    <script src="assets/load_knn.js"></script>
-                    <script src="assets/grid.js"></script>
-                    <script>
-                        function toggleDetails(element) {
-                            var project = element.parentElement;
-                            project.classList.toggle('expanded');
-                        }
-                    </script>
-
-
+                      </div>
+                      
+                      
+                    
 
                 </section> <!-- Final da Seção de Projetos -->
 
@@ -188,6 +128,8 @@
              <a href="mailto:kaiqueyuto1@gmail.com"><strong>kaiqueyuto1@gmail.com</strong></a></p>
     </footer>
 
+    <script src="assets/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 
 </html>
