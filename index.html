@@ -58,33 +58,42 @@
                 <section class="projects" id="projects">
                     <h1 id ="projects-section-title"> Alguns Projetos</h1>
 
-                    <div class="card" style="width: 18rem;">
-                        <img src="assets/purchase_intention/thumbnail.png" class="card-img-top" alt="Project 1">
+                    <div class="card">
+                        <img src="assets/purchase_intention/thumbnail.png" class="card-img-top" data-project="project1">
                         <div class="card-body">
-                            <h5 class="card-title">Projeto 1</h5>
-                            <p class="card-text">Descrição breve do Projeto 1.</p>
-                            <a href="#" class="btn btn-primary" data-project="project1">Ver mais</a>
+                            <h5 class="card-title">Predicting Purchase Intention</h5>
+                            <p class="card-text">Building SVM models for predicting customer purchase intention in a E-commerce business</p>
                         </div>
                     </div>
                     
-                    <div class="card" style="width: 18rem;">
-                        <img src="assets/Hospital/thumbnail.png" class="card-img-top" alt="Project 2">
+                    <div class="card">
+                        <img src="assets/Hospital/thumbnail.png" class="card-img-top" data-project="project2">
                         <div class="card-body">
                             <h5 class="card-title">Projeto 2</h5>
                             <p class="card-text">Descrição breve do Projeto 2.</p>
-                            <a href="#" class="btn btn-primary" data-project="project2">Ver mais</a>
                         </div>
                     </div>
                     
-                    <div class="card" style="width: 18rem;">
-                        <img src="assets/market_basket_analysis/thumbnail.png" class="card-img-top" alt="Project 3">
+                    <div class="card">
+                        <img src="assets/market_basket_analysis/thumbnail.png" class="card-img-top" data-project="project3">
                         <div class="card-body">
                             <h5 class="card-title">Projeto 3</h5>
                             <p class="card-text">Descrição breve do Projeto 3.</p>
-                            <a href="#" class="btn btn-primary" data-project="project3">Ver mais</a>
                         </div>
                     </div>
                     
+                    <!-- 
+                    ----------------------Para adicionar um novo projeto, basta incluir essa estrutura:
+                    <div class="card">
+                        <img src="thumbail_source.png" class="card-img-top" data-project="projectX">
+                        <div class="card-body">
+                            <h5 class="card-title">Project Title</h5>
+                            <p class="card-text">Short description</p>
+                        </div>
+                    </div>
+                    ----------------------Além disso, você precisa adicioanr projectX em assets/main.js -> projectData
+                    -->
+
                     <div id="popup" class="popup">
                         <div class="popup-header">
                           <h2 id="popup-title">Título do Projeto</h2>
@@ -95,7 +104,7 @@
                             <h3>Project description</h3>
                             <p id="popup-description">Descrição detalhada do projeto.</p>
                       
-                            <h4>Skills and deliverables</h4>
+                            <h4>5 Skills and deliverables</h4>
                             <ul id="popup-skills">
                               <!-- Skills serão inseridas aqui -->
                             </ul>

@@ -122,12 +122,6 @@ section {
     margin: 20px
 }
 
-#dashboards-section-intro{
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-bottom: 20px;
-}
-
 .line_bellow_home_title{
     height: 1px;
     width: 70%;
@@ -197,109 +191,6 @@ section {
     flex-direction: column;
 }
 
-#projects-section-title{
-    font-size: 42px;
-}
-
-.dashboards_section{
-    display:flex;
-    flex-direction: column;
-}
-
-.dashboards_section_title{
-    font-size: 42px;
-    margin-bottom: 10px;
-    font-weight: 900;
-    font-style: italic;
-
-}
-
-.carousel{
-    width: 50vw;
-    margin: 1% auto 6% auto;
-    align-items: center;
-    display: flex;
-  }
-
-  .carousel img{
-    height: auto;
-    width: 50vw;
-    display: block;
-    justify-content: center;
-  }
-
-.slick-prev:before, .slick-next:before{
-    color: black;
- }
-
-.projects_subsection{
-    display: flex;
-    flex-direction: column;
-}
-
-.projects_subsection_title{
-    font-size: 42px;
-    font-weight: 900;
-    font-style: italic;
-    margin: 5% 15% 0 0%;
-    justify-content: left;
-    align-self: start;
-}
-
-.individual_projects_title{
-    font-size: 28px;
-    margin-bottom: 5px;
-    font-weight: 500;
-    margin-top: 5%;
-    font-weight: 600;
-    font-style: italic;
-} 
-
-.individual_project_display{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    height: auto;
-}
-
-.individual_project_description{
-    font-size: 24px;
-    text-align: justify;
-    text-justify: inter-word;;
-}
-.car_sales_model_pictures{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-    margin: 1% 1% 1% 1%;
-    width: auto;
-    max-height: inherit;
-}
-
-.market_basket_analysis_picture{
-    max-width: 60%;
-    margin-top: 1%;
-}
-
-.hospital_project_container{
- display: flex;
- flex-direction: row;
-}
-
-.hospital_project_description{
-font-size: 24px;
-align-items: center;
-justify-content: center;
-margin: 2% 6% 0 1%;
-}
-
-.hospital_picture{
-    margin-top: 1%;
-    width: 35%;
-}
-
 .footer{
     background-color: black;
     height: 10%;
@@ -312,54 +203,23 @@ margin: 2% 6% 0 1%;
     color: white;
 }
 
-.project {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin: 10px 0;
-    background-color: #f9f9f9;
+.card{
+    max-width: 600px;
+    max-height: 600px;
+    height: 40rem;
 }
 
-.project-title {
-    font-size: 1.2em;
-    font-weight: bold;
-    cursor: pointer;
+.card-img-top {
+    width: 100%;
+    height: auto; 
+    transition: filter 0.3s ease; /* Suaviza a transição */
+    filter: brightness(1); /* Brilho normal */
 }
 
-.project-description {
-    margin: 5px 0;
+.card-img-top:hover {
+    filter: brightness(0.8); /* Reduz o brilho para escurecer a imagem */
 }
 
-.project-details {
-    display: none;
-    margin-top: 10px;
-    border-top: 1px solid #ddd;
-    padding-top: 10px;
-}
-
-.project.expanded .project-details {
-    display: block;
-}
-
-/* Style for the grid container */
-#grid-container {
-    width: 400px;  /* Adjust size as needed */
-    height: 400px; /* Adjust size as needed */
-    display: grid;
-    gap: 2px; /* Space between cells */
-    border: 1px solid black; /* Optional border around the entire grid */
-    cursor: pointer; /* Change cursor to pointer on hover */
-}
-
-/* Style for each cell in the grid */
-.grid-cell {
-    background-color: black; /* Initial cell color */
-    border: 1px solid #333;  /* Optional border for cells */
-}
-
-/* Add a smooth transition for color changes */
-.grid-cell:hover {
-    transition: background-color 0.3s;
-}
 
 .popup {
     display: none; /* Esconde o pop-up inicialmente */
@@ -457,11 +317,7 @@ margin: 2% 6% 0 1%;
     border-radius: 5px;
   }
   
-  .popup-images p {
-    text-align: center;
-    font-size: 14px;
-    margin-top: 5px;
-  }
+
   
   .popup-published-date {
     font-size: 14px;
@@ -472,4 +328,15 @@ margin: 2% 6% 0 1%;
 display: flex; /* Exibe o pop-up */
 opacity: 1; /* Torna visível */
 transform: scale(1); /* Tamanho original */
+}
+
+.img-title{
+    font-size: 20px;
+    font-weight: bold;
+    left: 5px;
+}
+
+.img-caption{
+    font-size: 16px;
+    text-align: justify;
 }
