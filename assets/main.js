@@ -1,7 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
   console.log("DOM totalmente carregado");
   initializeEventListeners(); 
+
+  
 });
+
 
 // Dados dos projetos
 const projectData = {
@@ -23,6 +26,24 @@ const projectData = {
         { src: "assets/purchase_intention/confusion_matrix.png", title: 'Confusion Matrix for Version 3', caption: "Choosing Version 3 as an example, we can plot it's confusion matrix so we can see the predictions X ground truth for the 6245 testing points."},
       ]
     },
+    project2: {
+      title: "Prevendo Taxa de Juros",
+      description: `
+      Neste projeto tentaremos estimar a Taxa de Juros para os anos de 2024 e 2025 usando uma rede neural de arquitetura Long Short-Term Memory (LSTM) é treinada para tentar modelar o comportamento da Taxa Anual de Juros, usando uma abordagem de séries temporais. Foi considerado que os últimos 3 anos são influentes no próximo valor de Taxa de Juros, e o restante dos atributos foram descartados. O Dataset utilizado é fictício e contém dados anuais de 1970 até 2023.
+      `,
+      my_role: 'Data Scientist',
+      skills: ["Deep Learning", "Python", "Análise de Séries Temporais", "TensorFlow", "Modelagem de Dados"],
+      date: "Fev 16, 2025",
+      images: [
+        { src: "assets/predicting_inflation_rates/historical_data.png", title: '', caption: "Ao observar a Taxa Anual de Juros podemos notar um comportamento típico de série temporal, mas sem uma periodicidade clara. Tentaremos modelar este comportamento neste projeto usando uma rede neural LSTM." },
+        { src: "assets/predicting_inflation_rates/training_loss.png", title: '', caption: "A figura mostra o erro do modelo durante o seu treinamento, alguns valores de épocas foram testados e notou-se um aumento na função de erro após cerca de 40 épocas"},
+        { src: "assets/predicting_inflation_rates/training_test_data.png", title: '', caption: "Podemos observar que um certo padrão foi aprendio pelo modelo, apesar de que, na prática, a Taxa de Inflação parece ser muito mais volátil do que o comportamento aprendido."},
+        { src: "assets/predicting_inflation_rates/summary.png", title: '', caption: "Aqui estão algumas métricas usadas para avaliar a performance do modelo, bem como as previsões para os anos de 2024 e 2025 "}
+        
+      ]
+    }
+
+    /*
     project2: {
       title: "Projeto 2",
       description: "Descrição completa do Projeto 2. Este projeto faz ABC.",

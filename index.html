@@ -9,6 +9,8 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/onnxruntime-web/dist/ort.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
 
     
 </script>
@@ -49,51 +51,65 @@
                         </p>
                     </div>
                     <div class =my_anchors_container>
-                        <a class="my_anchors" href="https://www.instagram.com/kaiqueyuto/">Instagram</a>
-                        <a class="my_anchors" href="https://github.com/Kaique-Yuto">GitHub</a>
                         <a class="my_anchors" href="https://www.linkedin.com/in/kaiqueyuto/">LinkedIn</a>
+                        <a class="my_anchors" href="https://github.com/Kaique-Yuto">GitHub</a>
+                        <a class="my_anchors" href="https://www.instagram.com/kaiqueyuto/">Instagram</a>
                     </div>
+                    
                 </section>
-
+                
                 <section class="projects" id="projects">
+                    <hr></hr>
                     <h1 id ="projects-section-title"> Alguns Projetos</h1>
 
-                    <div class="card">
-                        <img src="assets/purchase_intention/thumbnail.png" class="card-img-top" data-project="project1">
-                        <div class="card-body">
-                            <h5 class="card-title">Predicting Purchase Intention</h5>
-                            <p class="card-text">Building SVM models for predicting customer purchase intention in a E-commerce business</p>
-                        </div>
-                    </div>
-                    
-                    <div class="card">
-                        <img src="assets/Hospital/thumbnail.png" class="card-img-top" data-project="project2">
-                        <div class="card-body">
-                            <h5 class="card-title">Projeto 2</h5>
-                            <p class="card-text">Descrição breve do Projeto 2.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="card">
-                        <img src="assets/market_basket_analysis/thumbnail.png" class="card-img-top" data-project="project3">
-                        <div class="card-body">
-                            <h5 class="card-title">Projeto 3</h5>
-                            <p class="card-text">Descrição breve do Projeto 3.</p>
-                        </div>
-                    </div>
-                    
-                    <!-- 
-                    ----------------------Para adicionar um novo projeto, basta incluir essa estrutura:
-                    <div class="card">
-                        <img src="thumbail_source.png" class="card-img-top" data-project="projectX">
-                        <div class="card-body">
-                            <h5 class="card-title">Project Title</h5>
-                            <p class="card-text">Short description</p>
-                        </div>
-                    </div>
-                    ----------------------Além disso, você precisa adicioanr projectX em assets/main.js -> projectData
-                    -->
 
+                    <div class="card-carousel">
+                        <div class="card">
+                            <img src="assets/purchase_intention/thumbnail.png" class="card-img-top" data-project="project1">
+                            <div class="card-body">
+                                <h5 class="card-title">Predicting Purchase Intention</h5>
+                                <p class="card-text">Building SVM models for predicting customer purchase intention in a E-commerce business.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <img src="assets/predicting_inflation_rates/training_test_data.png" class="card-img-top" data-project="project2">
+                            <div class="card-body">
+                                <h5 class="card-title">Prevendo Taxa de Juros</h5>
+                                <p class="card-text">Construindo uma rede neural LSTM para previsão de Taxa de Juros anual.</p>
+                            </div>
+                        </div>
+
+                        <!--
+                        <div class="card">
+                            <img src="assets/Hospital/thumbnail.png" class="card-img-top" data-project="project2">
+                            <div class="card-body">
+                                <h5 class="card-title">Projeto 2</h5>
+                                <p class="card-text">Descrição breve do Projeto 2.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <img src="assets/market_basket_analysis/thumbnail.png" class="card-img-top" data-project="project3">
+                            <div class="card-body">
+                                <h5 class="card-title">Projeto 3</h5>
+                                <p class="card-text">Descrição breve do Projeto 3.</p>
+                            </div>
+                        </div>
+                        -->
+                        
+                        <!-- 
+                        ----------------------Para adicionar um novo projeto, basta incluir essa estrutura:
+                        <div class="card">
+                            <img src="thumbail_source.png" class="card-img-top" data-project="projectX">
+                            <div class="card-body">
+                                <h5 class="card-title">Project Title</h5>
+                                <p class="card-text">Short description</p>
+                            </div>
+                        </div>
+                        ----------------------Além disso, você precisa adicioanr projectX em assets/main.js -> projectData
+                        -->
+                    </div>
                     <div id="popup" class="popup">
                         <div class="popup-header">
                           <h2 id="popup-title">Título do Projeto</h2>
@@ -134,11 +150,13 @@
     <footer class="footer" id="footer">
         <p class="footer_text">*Tenha em mente que esta página web está constantemente em desenvolvimento. Caso perceba quaisquer
              inconsistências, por favor, entre em contato pelas redes sociais acima ou me mande um e-mail!
-             <a href="mailto:kaiqueyuto1@gmail.com"><strong>kaiqueyuto1@gmail.com</strong></a></p>
+             <a href="mailto:kaiqueyuto1@gmail.com" class="email" style="color: white;"><strong>kaiqueyuto1@gmail.com</strong></a></p>
     </footer>
 
+    
+
     <script src="assets/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
 </body>
 
 </html>

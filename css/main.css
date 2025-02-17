@@ -2,6 +2,27 @@
 @import url('https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css');
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 
+#footer .email {
+    color: white !important; 
+    text-decoration: none; 
+}
+
+.email:visited {
+    color: white;
+}
+
+.email:hover {
+    color: white;
+}
+
+.email:active {
+    color: white;
+}
+
+.email strong {
+    color: inherit; 
+}
+
 
 :root{
     --header-height: 6vh;
@@ -14,6 +35,9 @@
     color: black;
 }
 
+.email{
+    color:white;
+}
 a:visited {
     text-decoration: none;
 }
@@ -89,7 +113,7 @@ section {
 .page_container{
     display: flex;
     flex-direction: row;
-
+    background-color: #1E1E2E;
 }
 
 .center_container{
@@ -105,7 +129,7 @@ section {
 }
 
 .home_content{
-    margin: 0 0 200px 0;
+    margin: 0 0 50px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -184,10 +208,10 @@ section {
 }
 
 .projects{
-    margin: 0% 15% 5% 15%;
+    margin: 0% 0% 5% 0%;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
     flex-direction: column;
 }
 
@@ -204,14 +228,24 @@ section {
 }
 
 .card{
-    max-width: 600px;
-    max-height: 600px;
+    max-width: 400px;
+    max-height: 400px;
     height: 40rem;
+    width: 40rem;
+    background-color: white;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    display: flex;
+    flex-direction: column; /* Layout em coluna */
+    overflow: hidden; /* Garante que os elementos não escapem */
+    margin-left: 0;
+    margin-right: 10px;
 }
 
 .card-img-top {
     width: 100%;
-    height: auto; 
+    height: 65%;
+    object-fit: cover;
     transition: filter 0.3s ease; /* Suaviza a transição */
     filter: brightness(1); /* Brilho normal */
 }
@@ -220,6 +254,12 @@ section {
     filter: brightness(0.8); /* Reduz o brilho para escurecer a imagem */
 }
 
+.card-carousel{
+display: flex;
+flex-direction: row;
+width: 95%;
+justify-content: flex-start;
+}
 
 .popup {
     display: none; /* Esconde o pop-up inicialmente */
@@ -340,3 +380,6 @@ transform: scale(1); /* Tamanho original */
     font-size: 16px;
     text-align: justify;
 }
+
+
+
