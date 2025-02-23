@@ -41,17 +41,26 @@ const projectData = {
         { src: "assets/predicting_inflation_rates/summary.png", title: '', caption: "Aqui estão algumas métricas usadas para avaliar a performance do modelo, bem como as previsões para os anos de 2024 e 2025 "}
         
       ]
-    }
-
-    /*
-    project2: {
-      title: "Projeto 2",
-      description: "Descrição completa do Projeto 2. Este projeto faz ABC.",
-      images: [
-        { src: "assets/project2/image1.png", title: '', caption: "Imagem 1 do Projeto 2" },
-        { src: "assets/project2/image2.png", title: '', caption: "Imagem 2 do Projeto 2" }
-      ]
     },
+    project3: {
+      title: "Segmentação de Clientes",
+      description: "Neste projeto estudamos várias maneiras diferentes de fazer a segmentação de um grupo de clientes de um serviço de food delivery, baseado em um histórico de 10.000 de pedidos. Os dados são transformados, métricas como inércia e WCSS(Within-Cluster Sum of Square) de vários modelos de KMeans, um dos algoritmos mais famoso de clusterização. Agrupando clientes em grupos similares podemos criar campanhas personalizadas de marketing, aumentando a eficiência de propagandas e promoções sobre grupos específicos de clientes.",
+      skills: ["KMeans", "Python", "Clusterização", "Aprendizado não Supervisionado", "Marketing Analytics"],
+      date: "Fev 23, 2025",
+      images: [
+        { src: "assets/marketing_analytics/dataset.png", title: 'Conjunto de dados estudado', caption: "Breve visualização do dataset para entendimento inicial da estrutura/organização dos dados." },
+        { src: "assets/marketing_analytics/pizzas_per_location.png", title: 'Distribuição de pedidos de pizza por Localidade', caption: "Um total de 9 localidades diferentes foi observado, havendo claramente duas com um número maior de pedidos do que o restante. Uma investigação mais detalhada precisa ser conduzida." },
+        { src: "assets/marketing_analytics/reg_plot.png", title: 'Regression plot', caption: "Podemos observar claras tendências entre certos pares de variáveis. Pedidos com maior quantidade de pizzas tendem a ter uma maior quantidade de bedidas e sobremesas, enquanto que as saladas são menos escolhidas para estes pedidos com pizza." },
+        { src: "assets/marketing_analytics/models_metrics.png", title: 'Métricas', caption: "Valores de Inércia e WCSS para várias combinações de modelos, tanto em número de clusters, quanto em variáveis. Essas são duas métricas bem comuns para analisar algoritmos de clusterização, entende-se que quanto maior a similirade entre os indivíduos de cada grupo, melhor foi feita a categorização." },
+        { src: "assets/marketing_analytics/pizza_desert_2_clusters_cluster.png", title: '2 Clusters para Pizza e Sobremesa', caption: "Aqui podemos ver um exemplo de agrupamento binário, categorizando os indivíduos baseado no número de pizzas e sobremesas em seus pedidos." },
+        { src: "assets/marketing_analytics/pizza_salad_3_clusters_cluster.png", title: '3 Clusters para Pizza e Salada', caption: "Mudando um pouco a perspectiva analisamos a divisão em 3 clusters, dessa vez separando por quantidade de pizzas e saladas nos pedidos." },
+        { src: "assets/marketing_analytics/pizza_location_4_clusters_clusters.png", title: '4 Clusters para Pizza e Localização', caption: "Aumentando a complexidade do modelo subimos o número de cluster para 4 neste modelo." },
+        { src: "assets/marketing_analytics/modelo_3d.png", title: '', caption: "A visualização se torna cada vez mais complicada com o aumento do número de variáveis entendidas pelo KMeans, usando-se 3 dimensões podemos enxergar a divisão em uma projeção deste tipo. " },
+        { src: "assets/marketing_analytics/modelo_final.png", title: '', caption: "Para todos os modelos citados acima foram explorados não apenas n° variáveis e clusters, mas também diferentes algortimos de divisão e inicialização. O modelo final para este projeto é o representado na imagem, levando em consideração quantidade de pizzas, saladas, e sobremesas. Com apenas 2 clusters e utilizando o algoritmo elkan e o método kmeans++ para inicialização do centróide" }
+        
+      ]
+    }
+    /*
     project3: {
       title: "Projeto 3",
       description: "Descrição completa do Projeto 3. Este projeto faz DEF.",
