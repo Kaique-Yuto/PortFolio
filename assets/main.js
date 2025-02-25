@@ -59,6 +59,17 @@ const projectData = {
         { src: "assets/marketing_analytics/modelo_final.png", title: '', caption: "Para todos os modelos citados acima foram explorados não apenas n° variáveis e clusters, mas também diferentes algortimos de divisão e inicialização. O modelo final para este projeto é o representado na imagem, levando em consideração quantidade de pizzas, saladas, e sobremesas. Com apenas 2 clusters e utilizando o algoritmo elkan e o método kmeans++ para inicialização do centróide" }
         
       ]
+    },
+    project4: {
+      title: "Teste AB",
+      description: "Vamos estudar o efeito que um determinado elemento em uma página de vendas de um E-Commerce produz sobre a taxa de conversão de seus clientes. O elemento em questão são as avaliações do produto em questão. Queremo analisar se a observação das avaliação pelos clientes tem alguma influência na decisão de compra dos produtos. Uma amostra de 55.000 registros foi analisada, e os resultados claramente comprovam que a visualização das avaliações possui um impacto negativo para o negócio, diminuindo a taxa de conversão de clientes neste caso.",
+      skills: ["Teste AB", "Python", "Estatística", "Teste de Hipóteses", "Business Analytics"],
+      date: "Fev 24, 2025",
+      images: [
+        { src: "assets/AB_test/summary.png", title: 'Resumo dos dados', caption: "Breve resumo sobre os dados. Nota-se um claro desbalanceamento entre as variantes A e B, isso é muito comum nesse tipo de cenário pois muitas vezes a variante de teste tem algum custo atrelado, ou mesmo pode afetar negativamente os clientes de seu grupo. O tamanho ideal deve sempre ser levado em consideração. Olhando mais a fundo, percebe-se que taxa de conversão de clientes da variante B aparenta ser realmente maior do que o grupo de controle. Mas como podemos comprovar isso?" },
+        { src: "assets/AB_test/pmfs.png", title: '', caption: "Plotamos as funções massa de probabilidade, em azul o grupo de controle, e em vermelho o grupo de teste. O gráfico nos dá ainda mais certeza da suposição comentada acima, porém, não nos comprova estatísticamente o fato. Precisamos ajustar essas funções para que se tornem distribuição Gaussianas adequadas, ou seja, vamos aplicar transformações aos dados para garantir que estejam na mesma escala de comparação." },
+        { src: "assets/AB_test/normal_distributions.png", title: 'Distribuições ajustadas para Normal', caption: "Finalmente ao ajustar ambas as funções para uma distribuição normal podemos inferir algo sobre a diferença entre as observações. Nossa hipótese nula afirma que não há diferença entre a taxa de conversão média observada entre as duas populações. Usando um intervalo de confiança de 95% para essa hipótese podemos rejeitá-la com facilide, devido ao valor-p baixíssimo e com um poder estatístico altíssimo. Podemos seguir com confiança para a equipe de negócios pois conseguimos comprovar as nossas suposições." }
+      ]
     }
     /*
     project3: {
