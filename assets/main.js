@@ -70,14 +70,21 @@ const projectData = {
         { src: "assets/AB_test/pmfs.png", title: '', caption: "Plotamos as funções massa de probabilidade, em azul o grupo de controle, e em vermelho o grupo de teste. O gráfico nos dá ainda mais certeza da suposição comentada acima, porém, não nos comprova estatísticamente o fato. Precisamos ajustar essas funções para que se tornem distribuição Gaussianas adequadas, ou seja, vamos aplicar transformações aos dados para garantir que estejam na mesma escala de comparação." },
         { src: "assets/AB_test/normal_distributions.png", title: 'Distribuições ajustadas para Normal', caption: "Finalmente ao ajustar ambas as funções para uma distribuição normal podemos inferir algo sobre a diferença entre as observações. Nossa hipótese nula afirma que não há diferença entre a taxa de conversão média observada entre as duas populações. Usando um intervalo de confiança de 95% para essa hipótese podemos rejeitá-la com facilide, devido ao valor-p baixíssimo e com um poder estatístico altíssimo. Podemos seguir com confiança para a equipe de negócios pois conseguimos comprovar as nossas suposições." }
       ]
-    }
-    /*
-    project3: {
-      title: "Projeto 3",
-      description: "Descrição completa do Projeto 3. Este projeto faz DEF.",
+    },
+  
+    project5: {
+      title: "Análise de negócio",
+      description: "Neste projeto foi definido uma séries de indicadores-chave para uma empresa do setor de varejo. Foi construída uma visão de Business Intelligence (BI) para acompanhar o faturamento e base de clientes. Os dados podem ser encontrados no meu GitHub. Com os dados estruturados, foram gerados indicadores como faturamento mensal, crescimento percentual da receita, total de clientes ativos, taxa de retenção e aquisição, além da comparação entre clientes novos e antigos. As visualizações criadas permitiram identificar padrões sazonais, impacto de campanhas promocionais e tendências de mercado. A partir dos insights obtidos a empresa teria maior clareza na tomada de decisão, otimizando estratégias de retenção e aquisição de clientes, além de entender melhor o impacto de ações comerciais ao longo do tempo. Além disso, é possível a geração de um dashboard interativo com ferramentas como PowerBI para acompanhamento dinâmico dos KPIs em tempos futuros.",
+      skills: ["Business Intelligence", "Python", "Análise de Negócios", "KPIs", "Análise de Dados"],
+      date: "March 04, 2025",
       images: [
-        { src: "assets/project3/image1.png", title: '', caption: "Imagem 1 do Projeto 3" },
-        { src: "assets/project3/image2.png", title: '', caption: "Imagem 2 do Projeto 3" }
+        { src: "assets/flea_mkt_BI/faturamento_mensal.png", title: 'Faturamento mensal', caption: "O primeiro indicador a ser avaliado em qualquer empresa do mundo. Faturamento mensal. O objetivo final de toda empresa e a base de todo plano de ação." },
+        { src: "assets/flea_mkt_BI/active_clients.png", title: 'Total de clientes ativos', caption: "Um dos indicadores mais simples que podemos analisar em praticamente qualquer tipo de negócio. O total de clientes ativos é um indicador universal no ramo empresarial" },
+        { src: "assets/flea_mkt_BI/brasil_revenue.png", title: 'Faturamento de um país de exemplo (Brasil)', caption: "Podemos acompanhar o faturamento mensal de um país de exemplo, neste caso, Brasil. Podemos observar um comportamento curioso, mas esperado, nos meses de novembro e dezembro. Claramente há um pico no primeiro e uma redução gigantesca no último. Vários fatores podem causar este efeito, como promoções (Black Friday) e ocorrência de viagens ao final de ano." },
+        { src: "assets/flea_mkt_BI/perc_growth.png", title: 'Crescimento percentual do faturamento', caption: "Crescimento percentual do faturamento. Pode ser um bom indicativo de planos de ação (campanhas de marketing, descontos, lançamento de novos produtos) tomados anteriormente, e também para observação de tendências na variação do faturamento." },
+        { src: "assets/flea_mkt_BI/new_old_customer_revenue.png", title: 'Comparação de faturamento entre clientes novos e antigos', caption: "Comparação da geração de receita entre clientes novos e antigos. Um ótimo recurso para auxiliar na tomada de decisão. Evidencia a importância de ações de retenção neste caso." },
+        { src: "assets/flea_mkt_BI/customer_retention_rate.png", title: 'Taxa de retenção de clientes', caption: "Outro indicador crucial para várias empresas é a retenção de clientes. Manter uma pessoa como cliente pode ser tão importante quanto conseguir um cliente novo. Ainda mais neste caso onde clientes antigos tendem a gerar um faturamento maior do que clientes novos." },
+        { src: "assets/flea_mkt_BI/new_customers_rate.png", title: 'Taxa de ganho de clientes', caption: "Quantidade de clientes novos para cada cliente antigo. Pode ser um bom indicativo de resultados de campanhas de marketing, ou de ações de retenção." }    
       ]
     }
     /*
