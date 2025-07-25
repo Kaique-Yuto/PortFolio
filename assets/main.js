@@ -9,22 +9,22 @@ document.addEventListener("DOMContentLoaded", () => {
 // Dados dos projetos
 const projectData = {
     project1: {
-      title: "Predicting Purchase Intention",
+      title: "Prevendo intenções de compra",
       description: `
-      The project consist in building a predictive model, more specificaly, a SVM classifier, that predicts purchase intentions for a business. Many attributes were analyzed and used as training data for the model (see pictures). The dataset is widely known and can be found at <https://archive.ics.uci.edu/dataset/468/online+shoppers+purchasing+intention+dataset>. Several combinations of SVM models were searched with GridSearch // and also different kernel functions were tested. 5 performance metrics were calculated for 6245 predictions on new datapoints. Some models reached over 83% in all metrics.
+      O projeto consiste na construção de um modelo preditivo, mais especificamente, um classificador SVM, que prevê as intenções de compra para uma empresa. Diversos atributos foram analisados e utilizados como dados de treinamento para o modelo (ver imagens). O conjunto de dados é amplamente conhecido e pode ser encontrado em https://archive.ics.uci.edu/dataset/468/online+shoppers+purchasing+intention+dataset. Várias combinações de modelos SVM foram pesquisadas com GridSearch e também diferentes funções de kernel foram testadas. Cinco métricas de desempenho foram calculadas para 6245 previsões em novos pontos de dados. Alguns modelos alcançaram mais de 83% em todas as métricas.
       `,
       my_role: 'Data Scientist',
       skills: ["Machine Learning", "Python", "Statistics", "Data Analysis", "Data Visualization"],
       date: "Jan 8, 2025",
       images: [
-        { src: "assets/purchase_intention/output.png", title: 'Box-plots of continuous variables', caption: "All variables are analyzed for future insights on optimizing training by applying scaling transformations." },
-        { src: "assets/purchase_intention/correlation_matrix.png", title: 'Correlation matrix', caption: "Correlation analysis may help on feature selection and understanding our target variable behavior." },
-        { src: "assets/purchase_intention/countplot.png", title: 'Revenue distribution', caption: "Revenue distribution indicates that balacing methods need to be applied before proceding."},
-        { src: "assets/purchase_intention/other_plots.png", title: 'Customers summary', caption: "Here are some useful information on the customers, this may help on customized offers/actions."},
-        { src: "assets/purchase_intention/model comparison.png", title: 'Models results table', caption: "Here are some models comparison, we can choose one based on preferred metric/combination."},
-        { src: "assets/purchase_intention/model_comparison.png", title: 'Models results comparison', caption: "We can see their performances in a more visual manner."},
-        { src: "assets/purchase_intention/confusion_matrix.png", title: 'Confusion Matrix for Version 3', caption: "Choosing Version 3 as an example, we can plot it's confusion matrix so we can see the predictions X ground truth for the 6245 testing points."},
-      ]
+      { src: "assets/purchase_intention/output.png", title: 'Box-plots de variáveis contínuas', caption: "Análise de variáveis para otimizar o treinamento com transformações de escala." },
+      { src: "assets/purchase_intention/correlation_matrix.png", title: 'Matriz de correlação', caption: "Análise de correlação auxilia na seleção de features e entendimento da variável alvo." },
+      { src: "assets/purchase_intention/countplot.png", title: 'Distribuição de receita', caption: "A distribuição de receita exige balanceamento antes de prosseguir." },
+      { src: "assets/purchase_intention/other_plots.png", title: 'Resumo de clientes', caption: "Informações úteis sobre clientes, auxiliando em ofertas e ações personalizadas." },
+      { src: "assets/purchase_intention/model comparison.png", title: 'Tabela de resultados de modelos', caption: "Comparação de modelos para seleção baseada em métricas ou combinações." },
+      { src: "assets/purchase_intention/model_comparison.png", title: 'Comparativo de resultados de modelos', caption: "Visualização do desempenho dos modelos de forma mais clara." },
+      { src: "assets/purchase_intention/confusion_matrix.png", title: 'Matriz de Confusão para Versão 3', caption: "Exemplo da Versão 3, com sua matriz de confusão para previsões X real de 6245 pontos de teste." },
+    ]
     },
     project2: {
       title: "Prevendo Taxa de Juros",
