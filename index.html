@@ -20,10 +20,11 @@
 <body>
     <nav class="header">
         <ul class="header_buttons_container">
-            <li><a href="#home" class="header_buttons">Início</a></li>
-            <li><a href="#projects" class="header_buttons">Projetos</a></li>
-            <li><a href="assets/Kaique_Yuto.pdf" download="Currículo.pdf" class="header_buttons">Currículo</a></li>
-        </ul> 
+            <li><a href="#home" class="header_buttons" data-i18n="nav.home">Início</a></li>
+            <li><a href="#projects" class="header_buttons" data-i18n="nav.projects">Projetos</a></li>
+            <li><a id="resume-link" href="assets/Kaique_Yuto_portugues.docx" download="Kaique_Yuto_Curriculo.docx" class="header_buttons" data-i18n="nav.resume">Currículo</a></li>
+            <li><button id="lang-toggle" class="lang-toggle">EN</button></li>
+        </ul>
     </nav>
 
     <main>
@@ -35,15 +36,15 @@
                 <section class="home_content" id="home">
                     <h1 class="home_title">Kaique Yuto Rodrigues </h1>
                     <hr class="line_bellow_home_title">
-                    <p class="my_brief_summary">Cientista de Dados e Engenheiro Mecânico.</p>
+                    <p class="my_brief_summary" data-i18n="hero.summary">Cientista de Dados e Engenheiro Mecânico.</p>
                     <div class="main_info_and_my_picture_container">
                         <img class= "my_picture" src="assets/foto_1x1.jpg" alt="Minha Foto">
-                        <p class="my_info"> Olá! Sou um estudande de Ciência de Dados e trabalho como Analista 
-                            de Ciência de Dados II pela  <a href="https://animaeducacao.com.br/" class = text-hyperlink>
-                            Ânima Educação</a>, desde 2025. Possuo um bacharel em Engenharia Mecânica pela 
-                            <a href="https://www.uem.br/" class=text-hyperlink>Universidade Estadual de Maringá - UEM</a> 
-                            E Cientista de Dados certificado pela <a href="https://www.datascienceacademy.com.br/" 
-                            class=text-hyperlink>Data Science Academy</a>. Sou apaixonado por jogos eletrônicos, de estratégia, 
+                        <p class="my_info" data-i18n-html="hero.bio"> Olá! Sou um estudante de Ciência de Dados e trabalho como Analista
+                            de Ciência de Dados II pela  <a href="https://animaeducacao.com.br/" class="text-hyperlink">
+                            Ânima Educação</a>, desde 2025. Possuo um bacharel em Engenharia Mecânica pela
+                            <a href="https://www.uem.br/" class="text-hyperlink">Universidade Estadual de Maringá - UEM</a>
+                            e sou Cientista de Dados certificado pela <a href="https://www.datascienceacademy.com.br/"
+                            class="text-hyperlink">Data Science Academy</a>. Sou apaixonado por jogos eletrônicos, de estratégia,
                             e também por ciência e matemática. Nas horas livres gosto de cozinhar e passar um tempo com meus amigos.
                             Se você gostaria de conversar comigo sobre Dados, programação, ou qualquer assunto interessante, por favor, não deixe
                             de me enviar uma mensagem pelas redes sociais abaixo!
@@ -59,48 +60,47 @@
                 
                 <section class="projects" id="projects">
                     <hr></hr>
-                    <h1 id ="projects-section-title"> Alguns Projetos</h1>
+                    <h1 id="projects-section-title" data-i18n="projects.title"> Alguns Projetos</h1>
 
 
                     <div class="card-carousel">
                         <div class="card">
                             <img src="assets/purchase_intention/thumbnail.png" class="card-img-top" data-project="project1">
                             <div class="card-body">
-                                <h5 class="card-title">Prevendo intenções de compra</h5>
-                                <p class="card-text">Construindo modelos SVM para prever a intenção de compra de clientes de um E-commerce.</p>
+                                <h5 class="card-title" data-i18n="card.project1.title">Prevendo intenções de compra</h5>
+                                <p class="card-text" data-i18n="card.project1.desc">Construindo modelos SVM para prever a intenção de compra de clientes de um E-commerce.</p>
                             </div>
                         </div>
-                        
+
                         <div class="card">
                             <img src="assets/predicting_inflation_rates/training_test_data.png" class="card-img-top" data-project="project2">
                             <div class="card-body">
-                                <h5 class="card-title">Prevendo Taxa de Juros</h5>
-                                <p class="card-text">Construindo uma rede neural LSTM para previsão de Taxa de Juros anual.</p>
+                                <h5 class="card-title" data-i18n="card.project2.title">Prevendo Taxa de Juros</h5>
+                                <p class="card-text" data-i18n="card.project2.desc">Construindo uma rede neural LSTM para previsão de Taxa de Juros anual.</p>
                             </div>
                         </div>
-                        
+
                         <div class="card">
                             <img src="assets/marketing_analytics/thumbnail.png" class="card-img-top" data-project="project3">
                             <div class="card-body">
-                                <h5 class="card-title">Segmentação de Clientes</h5>
-                                <p class="card-text">Agrupando clientes de um food delivery para campanhas personalizadas de marketing.</p>
+                                <h5 class="card-title" data-i18n="card.project3.title">Segmentação de Clientes</h5>
+                                <p class="card-text" data-i18n="card.project3.desc">Agrupando clientes de um food delivery para campanhas personalizadas de marketing.</p>
                             </div>
                         </div>
 
                         <div class="card">
                             <img src="assets/AB_test/thumbnail.png" class="card-img-top" data-project="project4">
                             <div class="card-body">
-                                <h5 class="card-title">Teste AB</h5>
-                                <p class="card-text">Observando efeito da presença de Reviews em site de E-Commerce.</p>
+                                <h5 class="card-title" data-i18n="card.project4.title">Teste AB</h5>
+                                <p class="card-text" data-i18n="card.project4.desc">Observando efeito da presença de Reviews em site de E-Commerce.</p>
                             </div>
                         </div>
 
-                        
                         <div class="card">
                             <img src="assets/flea_mkt_BI/thumbnail.png" class="card-img-top" data-project="project5">
                             <div class="card-body">
-                                <h5 class="card-title">Análise de negócio</h5>
-                                <p class="card-text">Acompanhando vários indicadores para uma loja da rede de varejo.</p>
+                                <h5 class="card-title" data-i18n="card.project5.title">Análise de negócio</h5>
+                                <p class="card-text" data-i18n="card.project5.desc">Acompanhando vários indicadores para uma loja da rede de varejo.</p>
                             </div>
                         </div>
                         
@@ -124,15 +124,15 @@
                         </div>
                         <div class="popup-body">
                           <div class="popup-description">
-                            <h3>Project description</h3>
+                            <h3 data-i18n="popup.desc_header">Descrição do Projeto</h3>
                             <p id="popup-description">Descrição detalhada do projeto.</p>
-                      
-                            <h4>5 Skills and deliverables</h4>
+
+                            <h4 data-i18n="popup.skills_header">Habilidades e Entregas</h4>
                             <ul id="popup-skills">
                               <!-- Skills serão inseridas aqui -->
                             </ul>
-                      
-                            <p class="popup-published-date">Published on <span id="popup-date">Jan 8, 2025</span></p>
+
+                            <p class="popup-published-date"><span data-i18n="popup.published">Publicado em</span> <span id="popup-date">Jan 8, 2025</span></p>
                           </div>
                           <div class="popup-images" id="popup-images">
                             <!-- As imagens serão carregadas dinamicamente -->
@@ -155,7 +155,7 @@
     
 
     <footer class="footer" id="footer">
-        <p class="footer_text">*Tenha em mente que esta página web está constantemente em desenvolvimento. Caso perceba quaisquer
+        <p class="footer_text" data-i18n-html="footer.text">*Tenha em mente que esta página web está constantemente em desenvolvimento. Caso perceba quaisquer
              inconsistências, por favor, entre em contato pelas redes sociais acima ou me mande um e-mail!
              <a href="mailto:kaiqueyuto1@gmail.com" class="email" style="color: white;"><strong>kaiqueyuto1@gmail.com</strong></a></p>
     </footer>

@@ -100,6 +100,22 @@ section {
     padding: 10px 20px;
 }
 
+.lang-toggle {
+    background: transparent;
+    border: 1px solid #EDF2F4;
+    border-radius: 4px;
+    color: #EDF2F4;
+    font-family: 'Inconsolata', monospace;
+    font-size: 16px;
+    padding: 6px 14px;
+    cursor: pointer;
+    letter-spacing: 0.05em;
+}
+
+.lang-toggle:hover {
+    background-color: #8D99AE;
+}
+
 .header_buttons:hover {
     background-color: #8D99AE;
     border-radius: 4px;
